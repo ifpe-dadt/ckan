@@ -345,7 +345,7 @@ def group_id_or_name_exists(reference: str, context: Context) -> Any:
     return reference
 
 
-name_match = re.compile(r'[a-z0-9_\-]*$')
+name_match = re.compile(r'[a-z0-9_\-@]*$')
 def name_validator(value: Any, context: Context) -> Any:
     '''Return the given value if it's a valid name, otherwise raise Invalid.
 
